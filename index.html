@@ -318,6 +318,26 @@
               <div class="c-card__icon">
                 <i class="icofont icofont-molecule"></i>
               </div>
+              <h4 class="c-card__header">AdamW and Scale-freeness</h4>
+              <div class="c-card__content js-card-content">
+                <p class="c-card__text">PyTorch implementation of the paper: Understanding AdamW through Proximal Methods and Scale-freeness.</p>
+              </div>
+              <div class="c-card__modal-content js-card-modal-content">
+                <p class="c-card__text">Adam has been widely adopted for training deep neural networks due to less hyperparameter tuning and remarkable performance. To improve generalization, Adam is typically used in tandem with a squared l2 regularizer (referred to as Adam-l2). However, even better performance can be obtained with AdamW, which decouples the gradient of the regularizer from the update rule of Adam-l2. Yet, we are still lacking a complete explanation of the advantages of AdamW. In this paper, we tackle this question from both an optimization and an empirical point of view. First, we show how to re-interpret AdamW as an approximation of a proximal gradient method, which takes advantage of the closed-form proximal mapping of the regularizer instead of only utilizing its gradient information as in Adam-l2. Next, we consider the property of "scale-freeness" enjoyed by AdamW and by its proximal counterpart: their updates are invariant to component-wise rescaling of the gradients. We provide empirical evidence across a wide range of deep learning experiments showing a correlation between the problems in which AdamW exhibits an advantage over Adam-l2 and the degree to which we expect the gradients of the network to exhibit multiple scales, thus motivating the hypothesis that the advantage of AdamW could be due to the scale-free updates.</p>
+                <a class="c-card__link" href="https://github.com/zhenxun-zhuang/AdamW-Scale-free" target="_blank">Check my project.</a>
+              </div>
+            </div>
+            <div class="c-card__button">
+              <button class="c-card__button-field" type="button"></button>
+            </div>
+          </div>
+
+          <div class="c-card__item js-toggle-modal">
+            <div class="c-card__sizer"></div>
+            <div class="c-card__inner">
+              <div class="c-card__icon">
+                <i class="icofont icofont-molecule"></i>
+              </div>
               <h4 class="c-card__header">SGD with Exponential and Cosine Step Sizes</h4>
               <div class="c-card__content js-card-content">
                 <p class="c-card__text">PyTorch implementation of the paper: A Second look at Exponential and Cosine Step Sizes: Simplicity, Convergence, and Performance.</p>
@@ -432,10 +452,16 @@
             <div class="c-tabs__content">
               <ul class="c-tabs__list">
                 <li>
+                  <h4>The thirty-sixth Conference on Neural Information Processing Systems (NeurIPS), 2022</h4>
+                </li>
+                <li>
+                  <h4>The thirty-ninth International Conference on Machine Learning (ICML), 2022</h4>
+                </li>
+                <li>
                   <h4>The thirty-fifth Conference on Neural Information Processing Systems (NeurIPS), 2021</h4>
                 </li>
                 <li>
-                  <h4>(Expert Reviewer) The 38th International Conference on Machine Learning (ICML), 2021</h4>
+                  <h4>(Expert Reviewer) The thirty-eighth International Conference on Machine Learning (ICML), 2021</h4>
                 </li>
                 <li>
                   <h4>The thirty-fourth Conference on Neural Information Processing Systems (NeurIPS), 2020</h4>
